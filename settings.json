@@ -1,0 +1,166 @@
+{
+	// Wordpress Intellisense
+	// "intelephense.file.maxSize"  : 3000000,
+	"material-icon-theme.folders.theme"  : "specific",
+	"workbench.iconTheme"                : "material-icon-theme",
+	"php.validate.executablePath"        : "D:\\xampp\\php\\php.exe",
+	"[scss]"                             : {
+		"editor.defaultFormatter"  : "esbenp.prettier-vscode",
+	},
+
+	"[php]": {
+		// "editor.formatOnSave"      : true,
+		// "editor.defaultFormatter"  : "rifi2k.format-html-in-php",
+		"editor.colorDecorators"  : true,
+	},
+
+	"scss.lint.unknownAtRules"  : "ignore",
+	"[javascript]"              : {
+		"editor.defaultFormatter"  : "vscode.typescript-language-features"
+	},
+	"javascript.format.insertSpaceBeforeFunctionParenthesis"                        : true,
+	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces"  : false,
+	// HTML PHP
+	"html.format.contentUnformatted"   : "pre,code,textarea",
+	"html.format.endWithNewline"       : false,
+	"html.format.extraLiners"          : "head, body, /html",
+	"html.format.indentHandlebars"     : false,
+	"html.format.indentInnerHtml"      : false,
+	"html.format.maxPreserveNewLines"  : null,
+	"html.format.preserveNewLines"     : true,
+	"html.format.wrapLineLength"       : 0,
+	"html.format.wrapAttributes"       : "auto",
+	// Alignment Settings
+	"alignment.surroundSpace": {
+		"colon": [
+			2,
+			1
+		],
+		"assignment": [
+			2,
+			2
+		],
+		"arrow": [
+			2,
+			1
+		],
+		"comment"  : 2
+	},
+	
+
+	// Prettier
+	"prettier.useTabs"         : true,
+	"prettier.tabWidth"        : 4,
+	"prettier.bracketSpacing"  : true,
+
+	//
+	"beautify.language": {
+		"html": [
+			"htm",
+			"html",
+			"php"
+		]
+	},
+	"beautify.options": {},
+
+	//Multi command for keybindings
+	"multiCommand.commands": [
+
+		{
+			"command"   : "multiCommand.deleteOneLineAndTab",
+			"sequence"  : [
+				"deleteAllLeft",
+				"tab"
+			]
+		},
+		{
+			"command"   : "multiCommand.alignAndSave",
+			"sequence"  : [
+				"editor.action.selectAll",
+				"wwm.aligncode",
+				"cancelSelection",
+				"workbench.action.files.save"
+			]
+		},
+
+		{
+			"command"   : "multiCommand.formatAndSave",
+			"sequence"  : [
+				"HookyQR.beautify",
+				"prettier.forceFormatDocument",
+				"workbench.action.files.save"
+			]
+		},
+	],
+	
+
+
+
+	"editor.quickSuggestionsDelay"                    : 1,
+	"editor.suggest.snippetsPreventQuickSuggestions"  : true,
+	"editor.colorDecorators"                          : true,
+	"editor.fontSize"                                 : 15,
+	"editor.wordWrap"                                 : "off",
+	"editor.snippetSuggestions"                       : "top",
+	"emmet.showAbbreviationSuggestions"               : true,
+	"editor.formatOnPaste"                            : false,
+	"editor.fontLigatures"                            : true,
+	"markdown.preview.fontSize"                       : 18,
+	"terminal.integrated.fontSize"                    : 18,
+	"editor.tabSize"                                  : 4,
+	"editor.detectIndentation"                        : false,
+	"editor.insertSpaces"                             : false,
+	"editor.minimap.enabled"                          : true,
+	"editor.formatOnSave"                             : false,
+	"explorer.decorations.badges"                     : false,
+	"editor.fontFamily"                               : "Fira Code",
+	
+	// "[scss]": {
+	// 	"editor.defaultFormatter"  : "esbenp.prettier-vscode"
+	//   },
+	//   "[javascriptreact]": {
+	// 	"editor.defaultFormatter"  : "esbenp.prettier-vscode"
+	//   },
+	//   "[jsonc]": {
+	// 	"editor.defaultFormatter"  : "esbenp.prettier-vscode"
+	//   },
+	
+	// "editor.fontFamily"                  : "Anonymous Pro",
+	// "eslint.enable"                      : true,
+	// "files.exclude"                      : { "**/.*": true },
+	// "eslint.validate"                    : [
+	//     {
+	//     "language"  : "vue",
+	//     "autoFix"   : true
+	//     },
+	//     {
+	//         "language"  : "typescript",
+	//         "autoFix"   : true
+	//     },
+	//     {
+	//     "language"  : "html",
+	//     "autoFix"   : true
+	//     },
+	//     {
+	//     "language"  : "javascript",
+	//     "autoFix"   : true
+	//     }
+	// ],
+	
+	"workbench.colorTheme": "Community Material Theme Darker High Contrast",
+	"workbench.colorCustomizations": {
+        "editor.rangeHighlightBackground": "#3f51b5",
+		"editor.findMatchHighlightBackground": "#1c54b2",
+		"editorError.background": "#d50000",
+		"editorError.foreground": "#6573c3"
+    },
+	// Theme
+	// "workbench.colorTheme"  : "Community Material Theme Darker High Contrast",
+	// "workbench.colorTheme": "Material Night Eighties",
+	"editor.tokenColorCustomizations": {
+		"[Community Material Theme Darker High Contrast]": {
+			"comments": "#14a37f",
+			"variables": "#ffd54f",
+		}
+	},
+}

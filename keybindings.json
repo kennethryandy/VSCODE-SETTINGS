@@ -1,0 +1,89 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key"      : "alt+`",
+        "command"  : "php-docblocker.trigger"
+    },
+	{
+		"key"      : "alt+w",
+		"command"  : "wwm.aligncode",
+		"when"     : "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key"      : "alt+d",
+		"command"  : "formatHtmlInPhp.format",
+		"when"     : "editorLangId == 'php'"
+	},
+    {
+        "key"      : "alt+1",
+        "command"  : "bracket-pair-colorizer.expandBracketSelection"
+    },
+	{
+		"key"      : "alt+q",
+		"command"  : "extension.multiCommand.execute",
+		"args"     : { "command" : "multiCommand.formatAndSave" },
+		"when"     : "editorFocus"
+ 	},
+	{
+        "key"      : "ctrl+shift+backspace",
+        "command"  : "extension.multiCommand.execute",
+        "args"     : { "command" : "multiCommand.deleteOneLineAndTab" },
+        "when"     : "editorTextFocus && !editorReadonly"
+    },
+	{
+        "key"      : "alt+e",
+        "command"  : "extension.multiCommand.execute",
+        "args"     : { "command": "multiCommand.alignAndSave" },
+        "when"     : "editorTextFocus && !editorReadonly"
+    },
+	
+	// Remove defaults
+	{
+		"key"      : "shift+alt+right",
+		"command"  : "-editor.action.smartSelect.expand",
+		"when"     : "editorTextFocus"
+	},
+	{
+		"key"      : "ctrl+shift+right",
+		"command"  : "-cursorWordEndRightSelect",
+		"when"     : "textInputFocus && !accessibilityModeEnabled"
+	},
+
+	// Overwite defaults
+	{
+		"key"      : "ctrl+shift+right",
+		"command"  : "editor.action.smartSelect.expand",
+		"when"     : "textInputFocus && !accessibilityModeEnabled"
+	},
+	{
+		"key"      : "shift+alt+right",
+		"command"  : "cursorWordEndRightSelect",
+		"when"     : "editorTextFocus"
+	},
+	{
+		"key"      : "shift+delete",
+		"command"  : "multiCommand.deleteOneLineAndTab"
+	},
+	{
+		"key": "alt+delete",
+		"command": "editor.action.deleteLines",
+		"when": "textInputFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+shift+k",
+		"command": "-editor.action.deleteLines",
+		"when": "textInputFocus && !editorReadonly"
+	}
+	
+]
+
+    // {
+    //     "key": "ctrl+left",
+    //     "command": "workbench.action.terminal.sendSequence",
+    //     "args": { "text": "\u001bb" }
+    // },
+    // {
+    //     "key": "ctrl+right",
+    //     "command": "workbench.action.terminal.sendSequence",
+    //     "args": { "text": "\u001bf" }
+    // }
