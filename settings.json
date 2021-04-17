@@ -1,9 +1,88 @@
 {
 	// Wordpress Intellisense
-	// "intelephense.file.maxSize"  : 3000000,
+	"intelephense.files.maxSize"  : 3000000,
+	"intelephense.format.braces": "allman",
+	"intelephense.environment.includePaths": [ "C:\\Users\\dyken\\vendor\\paulthewalton\\acf-pro-stubs" ],
+	"intelephense.stubs": [
+		"apache",
+		"bcmath",
+		"bz2",
+		"calendar",
+		"com_dotnet",
+		"Core",
+		"ctype",
+		"curl",
+		"date",
+		"dba",
+		"dom",
+		"enchant",
+		"exif",
+		"FFI",
+		"fileinfo",
+		"filter",
+		"fpm",
+		"ftp",
+		"gd",
+		"gettext",
+		"gmp",
+		"hash",
+		"iconv",
+		"imap",
+		"intl",
+		"json",
+		"ldap",
+		"libxml",
+		"mbstring",
+		"meta",
+		"mysqli",
+		"oci8",
+		"odbc",
+		"openssl",
+		"pcntl",
+		"pcre",
+		"PDO",
+		"pdo_ibm",
+		"pdo_mysql",
+		"pdo_pgsql",
+		"pdo_sqlite",
+		"pgsql",
+		"Phar",
+		"posix",
+		"pspell",
+		"readline",
+		"Reflection",
+		"session",
+		"shmop",
+		"SimpleXML",
+		"snmp",
+		"soap",
+		"sockets",
+		"sodium",
+		"SPL",
+		"sqlite3",
+		"standard",
+		"superglobals",
+		"sysvmsg",
+		"sysvsem",
+		"sysvshm",
+		"tidy",
+		"tokenizer",
+		"xml",
+		"xmlreader",
+		"xmlrpc",
+		"xmlwriter",
+		"xsl",
+		"Zend OPcache",
+		"zip",
+		"zlib",
+		"wordpress",
+	],
+	
+
+
 	"material-icon-theme.folders.theme"  : "specific",
 	"workbench.iconTheme"                : "material-icon-theme",
-	"php.validate.executablePath"        : "D:\\xampp\\php\\php.exe",
+	// "php.validate.executablePath"        : "D:\\xampp\\php\\php.exe",
 	"[scss]"                             : {
 		"editor.defaultFormatter"  : "esbenp.prettier-vscode",
 	},
@@ -11,7 +90,8 @@
 	"[php]": {
 		// "editor.formatOnSave"      : true,
 		// "editor.defaultFormatter"  : "rifi2k.format-html-in-php",
-		"editor.colorDecorators"  : true,
+		"editor.colorDecorators": true,
+		"editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
 	},
 
 	"scss.lint.unknownAtRules"  : "ignore",
@@ -61,7 +141,7 @@
 			"php"
 		]
 	},
-	"beautify.options": {},
+	"beautify.options"  : {},
 
 	//Multi command for keybindings
 	"multiCommand.commands": [
@@ -95,7 +175,8 @@
 	
 
 
-
+	"workbench.editor.titleScrollbarSizing"           : "large",
+	"workbench.tree.renderIndentGuides"               : "always",
 	"editor.quickSuggestionsDelay"                    : 1,
 	"editor.suggest.snippetsPreventQuickSuggestions"  : true,
 	"editor.colorDecorators"                          : true,
@@ -147,20 +228,23 @@
 	//     }
 	// ],
 	
-	"workbench.colorTheme": "Community Material Theme Darker High Contrast",
-	"workbench.colorCustomizations": {
-        "editor.rangeHighlightBackground": "#3f51b5",
-		"editor.findMatchHighlightBackground": "#1c54b2",
-		"editorError.background": "#d50000",
-		"editorError.foreground": "#6573c3"
+	"workbench.colorTheme"           : "Community Material Theme Darker High Contrast",
+	"workbench.colorCustomizations"  : {
+        "editor.rangeHighlightBackground"      : "#3f51b5",
+        "editor.findMatchHighlightBackground"  : "#1c54b2",
+        "editorError.background"               : "#d50000",
+        "editorError.foreground"               : "#6573c3"
     },
 	// Theme
 	// "workbench.colorTheme"  : "Community Material Theme Darker High Contrast",
 	// "workbench.colorTheme": "Material Night Eighties",
 	"editor.tokenColorCustomizations": {
 		"[Community Material Theme Darker High Contrast]": {
-			"comments": "#14a37f",
-			"variables": "#ffd54f",
+			"comments"   : "#14a37f",
+			"variables"  : "#ffd54f",
 		}
 	},
+	"php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+	"intelephense.completion.fullyQualifyGlobalConstantsAndFunctions": true,
+	"intelephense.environment.shortOpenTag": true,
 }
